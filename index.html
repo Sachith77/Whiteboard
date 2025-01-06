@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Collaborative Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Whiteboard</h1> <!-- Heading added here -->
+        <div class="toolbar">
+            <button class="tool-btn active" data-tool="pencil">Pencil</button>
+            <button class="tool-btn" data-tool="eraser">Eraser</button>
+            <button class="tool-btn" data-tool="rectangle">Rectangle</button>
+            <button class="tool-btn" data-tool="circle">Circle</button>
+            <button class="tool-btn" data-tool="text">Text</button>
+            <input type="color" class="color-picker" value="#000000">
+            <input type="range" class="size-picker" min="1" max="50" value="5">
+        </div>
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="actions">
+            <button class="action-btn save-btn" id="saveBtn">Save as Image</button>
+            <button class="action-btn clear-btn" id="clearBtn">Clear Canvas</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
